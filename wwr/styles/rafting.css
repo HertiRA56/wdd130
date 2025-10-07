@@ -36,14 +36,20 @@ nav a {
     justify-content: center;
     padding: 8px 16px;
     background-color: var(--rafting-color-dark);
-    color: var(--rafting-body-font);
+    color: var(--rafting-color-text);
     margin-left: 20px;
     text-decoration: none;
 }
 
+nav a:hover {
+    background-color: var(--rafting-color-medium);
+    color: var(--rafting-color-text);
+    text-decoration: underline;
+}
 
 body {
     font-family: var(--rafting-body-font);
+    color: var(--rafting-color-dark);
     color: var(--rafting-color-dark);
 }
 
@@ -99,12 +105,16 @@ h2 {
     text-align: center;
 }
 
-article {
-    top: 240px;
+.hero article {
     position: absolute;
-    background-color: var(--rafting-color-dark);
+    bottom: 30px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(41, 87, 148, 0.8);
+    /* dark blue, 80% opacity */
     color: var(--rafting-color-text);
-    opacity: 0.8;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .hero article img {
@@ -149,7 +159,6 @@ article {
 footer {
     display: block;
     border-top: var(--rafting-color-dark) 4px solid;
-    color: var(--rafting-color-text);
     text-align: center;
     color: var(--rafting-color-dark);
     font-size: 1.0em;
