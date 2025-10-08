@@ -32,18 +32,26 @@ nav {
     justify-content: flex-end;
 }
 
-nav a {
+nav ul {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex;
     padding: 8px 16px;
-    background-color: var(--rafting-color-dark);
     color: var(--rafting-body-font);
     margin-left: 20px;
     text-decoration: none;
-
 }
 
+nav li {
+    display: flex;
+    align-items: center;
+    background-color: var(--rafting-color-medium);
+    justify-content: flex;
+    padding: 8px 16px;
+    color: var(--rafting-body-font);
+    margin-left: 20px;
+    text-decoration: none;
+}
 
 nav a:hover {
     background-color: var(--rafting-color-medium);
@@ -79,6 +87,8 @@ article {
 }
 
 .socialmedia a {
+    display: flex;
+    justify-content: space-around;
     text-decoration: none;
     background-color: var(--rafting-body-font);
 }
