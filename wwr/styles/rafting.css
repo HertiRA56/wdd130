@@ -24,7 +24,6 @@ header {
     grid-template-columns: auto 1fr;
     align-items: center;
     border-bottom: var(--rafting-color-dark) 4px solid;
-
 }
 
 nav {
