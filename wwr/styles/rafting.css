@@ -86,8 +86,7 @@ article {
 }
 
 .socialmedia a {
-    display: flex;
-    justify-content: space-around;
+
     text-decoration: none;
     background-color: var(--rafting-body-font);
 }
