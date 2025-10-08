@@ -23,6 +23,8 @@ header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
+    border-bottom: var(--rafting-color-dark) 4px solid;
+
 }
 
 nav {
@@ -36,10 +38,12 @@ nav a {
     justify-content: center;
     padding: 8px 16px;
     background-color: var(--rafting-color-dark);
-    color: var(--rafting-color-text);
+    color: var(--rafting-body-font);
     margin-left: 20px;
     text-decoration: none;
+
 }
+
 
 nav a:hover {
     background-color: var(--rafting-color-medium);
@@ -50,7 +54,7 @@ nav a:hover {
 body {
     font-family: var(--rafting-body-font);
     color: var(--rafting-color-dark);
-    color: var(--rafting-color-dark);
+
 }
 
 body,
@@ -80,6 +84,7 @@ article {
 }
 
 .hero {
+    margin-top: 25px;
     position: relative;
 }
 
