@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Forms</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 
 <header>
@@ -17,10 +18,14 @@
             <fieldset>
                 <legend>Contact Information</legend>
                 <!-- form elements will go here -->
-                <label for="fullname">Full name</label>
-                <input type="text" id="fullname" name="fullname">
-                <label for="useremail">Email:</label>
-                <input type="text" id="useremail" name="useremail">
+                <div class="form-item colum2">
+                    <label for="fullname">Full name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-item colum2">
+                    <label for="useremail">Email:</label>
+                    <input type="text" id="useremail" name="useremail">
+                </div>
             </fieldset>
             <fieldset>
                 <legend>Questions</legend>
