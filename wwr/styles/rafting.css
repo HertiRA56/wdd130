@@ -85,6 +85,32 @@ article {
     padding: 8px;
 }
 
+.contact h1,
+p {
+    position: relative;
+    background-color: white;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 1.2em;
+    color: var(--rafting-color-dark);
+    text-align: center;
+    opacity: 0.9;
+}
+
+.contact h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+p {
+    top: 15px;
+    text-align: center;
+    color: var(--rafting-color-dark);
+    padding: 1px;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
 .socialmedia a {
 
     text-decoration: none;
@@ -141,6 +167,14 @@ h2 {
     flex-direction: row;
 }
 
+.history p {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 1.0em;
+    color: var(--rafting-color-dark);
+    text-align: justify;
+}
+
 .history img {
     margin-top: 25px;
     width: 200px;
@@ -155,8 +189,6 @@ h2 {
     margin-top: 20px;
 }
 
-
-
 .adventure img {
     width: 140px;
     height: auto;
@@ -169,10 +201,125 @@ h2 {
 
 }
 
+.staff {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.staff img {
+    width: 150px;
+    height: auto;
+    padding: 10px
+}
+
+.staff figcaption {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 1em;
+    color: var(--rafting-color-dark);
+}
+
 footer {
     display: block;
     border-top: var(--rafting-color-dark) 4px solid;
+    color: var(--rafting-color-text);
     text-align: center;
     color: var(--rafting-color-dark);
     font-size: 1.0em;
+}
+
+
+.map iframe {
+    border: 2px solid var(--rafting-color-dark);
+    border-radius: 8px;
+    width: 400px;
+    height: 390px;
+}
+
+.map-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+form {
+    max-width: 400px;
+    max-height: fit-content;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 16px 0;
+}
+
+legend {
+    margin-bottom: 8px;
+}
+
+
+.field-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.field-row label {
+    width: 120px;
+    margin-right: 10px;
+}
+
+.field-row input[type="text"],
+.field-row input[type="email"],
+.field-row textarea {
+    flex: 1;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.radio-fieldset {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0 16px 0;
+}
+
+
+button {
+    width: 50%;
+    padding: 10px;
+    background: #ddd;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ccc;
 }
