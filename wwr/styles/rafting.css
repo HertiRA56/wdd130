@@ -1,12 +1,12 @@
 :root {
-    --rafting-color: #0077b6;
-    --rafting-color-dark: #295794;
-    --rafting-color-medium: #0096c7;
-    --rafting-color-light: #90e0ef;
+    --rafting-color: #189bc7;
+    --rafting-color-dark: #0a5e67;
+    --rafting-color-medium: #1594be;
+    --rafting-color-light: #56c5d9;
     --rafting-color-text: white;
     --rafting-font-family: 'Arial', sans-serif;
-    --rafting-heading-font: 'Georgia', serif;
-    --rafting-body-font: Arial, Helvetica, sans-serif;
+    --rafting-heading-font: 'Georgia', sans-serif;
+    --rafting-body-font: Arial, Roboto, sans-serif;
 }
 
 * {
