@@ -1,12 +1,12 @@
 :root {
-    --rafting-color: #0077b6;
-    --rafting-color-dark: #295794;
-    --rafting-color-medium: #0096c7;
-    --rafting-color-light: #90e0ef;
+    --rafting-color: #b0b600db;
+    --rafting-color-dark: #7e8114;
+    --rafting-color-medium: #464702;
+    --rafting-color-light: #f2f47b;
     --rafting-color-text: white;
     --rafting-font-family: 'Arial', sans-serif;
-    --rafting-heading-font: 'Georgia', serif;
-    --rafting-body-font: Arial, Helvetica, sans-serif;
+    --rafting-heading-font: 'Georgia', sans-serif;
+    --rafting-body-font: Arial, Roboto, sans-serif;
 }
 
 * {
@@ -31,21 +31,35 @@ nav {
     justify-content: flex-end;
 }
 
-nav a {
+nav ul {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex;
     padding: 8px 16px;
-    background-color: var(--rafting-color-dark);
+
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+    justify-content: flex;
+    padding: 8px 16px;
+    background-color: var(--rafting-color-text);
     color: var(--rafting-body-font);
     margin-left: 20px;
     text-decoration: none;
 }
 
+nav a:hover {
+    background-color: var(--rafting-color-medium);
+    color: var(--rafting-color-font);
+    text-decoration: underline;
+}
 
 body {
     font-family: var(--rafting-body-font);
     color: var(--rafting-color-dark);
+
 }
 
 body,
@@ -69,42 +83,42 @@ article {
     padding: 8px;
 }
 
+p {
+    position: relative;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 1.2em;
+    color: var(--rafting-color-dark);
+    text-align: center;
+    opacity: 0.9;
+}
 
 .contact h1 {
-    padding-top: 15px;
     font-size: 2em;
     font-weight: bold;
     position: relative;
-    text-align: center;
-    color: var(--rafting-color-dark);
-
 }
 
-.hero p {
+p {
     top: 15px;
+    /*text-align: center;*/
+    /*background-color: white;*/
     color: var(--rafting-color-text);
     padding: 1px;
     margin: 10px 0;
     font-size: 1em;
 }
 
-p {
-    top: 15px;
-    text-align: center;
-    color: var(--rafting-color-dark);
-    padding: 1px;
-    margin: 10px 0;
-    font-size: 1.2em;
-}
-
 .socialmedia a {
-    text-decoration: none;
-    background-color: var(--rafting-body-font);
+
+    /*text-decoration: none;*/
+    /*background-color: var(--rafting-body-font);*/
+
 }
 
 .hero {
     margin-top: 25px;
-    position: relative
+    position: relative;
 }
 
 .hero img {
@@ -113,7 +127,7 @@ p {
     height: auto;
 }
 
-.hero h1 {
+h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -121,7 +135,7 @@ p {
     background-color: var(--rafting-color-dark);
     color: var(--rafting-color-text);
     padding: 16px;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 h2 {
@@ -130,22 +144,20 @@ h2 {
 }
 
 .hero article {
-    top: 400px;
     position: absolute;
-    background-color: rgba(27, 108, 168, 0.95);
-
-}
-
-.hero article p {
-    padding: 5px;
-    margin: 5px;
-    font-size: 1.0em;
+    bottom: 30px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(41, 87, 148, 0.8);
+    /* dark blue, 80% opacity */
     color: var(--rafting-color-text);
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .hero article img {
     float: right;
-    width: 75px;
+    width: 125px;
     height: auto;
 }
 
@@ -165,7 +177,7 @@ h2 {
 .history img {
     margin-top: 25px;
     width: 200px;
-    height: auto
+    height: auto;
 }
 
 .adventure {
@@ -176,8 +188,6 @@ h2 {
     margin-top: 20px;
 }
 
-
-
 .adventure img {
     width: 140px;
     height: auto;
@@ -186,6 +196,8 @@ h2 {
 
 .adventure figcaption {
     margin-left: 45px;
+
+
 }
 
 .staff {
@@ -196,10 +208,8 @@ h2 {
     margin-top: 20px;
 }
 
-
-
 .staff img {
-    width: 200px;
+    width: 150px;
     height: auto;
     padding: 10px
 }
@@ -210,7 +220,6 @@ h2 {
     margin-top: 8px;
     font-size: 1em;
     color: var(--rafting-color-dark);
-
 }
 
 footer {
@@ -220,6 +229,10 @@ footer {
     text-align: center;
     color: var(--rafting-color-dark);
     font-size: 1.0em;
+}
+
+p1 {
+    color: var(--rafting-color-dark);
 }
 
 .map iframe {
@@ -244,14 +257,11 @@ form {
     font-family: Arial, sans-serif;
 }
 
-
 fieldset {
     border: none;
     padding: 0;
     margin: 0 0 16px 0;
 }
-
-
 
 legend {
     margin-bottom: 8px;
@@ -273,7 +283,6 @@ legend {
 .field-row input[type="email"],
 .field-row textarea {
     flex: 1;
-    /* input stretches to fill */
     padding: 6px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -317,7 +326,7 @@ button:hover {
     background: #ccc;
 }
 
-/*  For home page */
+
 .hero-home {
     margin-top: 25px;
     position: relative
